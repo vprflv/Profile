@@ -36,7 +36,7 @@ export default function Projects() {
                                     Посмотреть сайт
                                 </a>
                                 <a
-                                    href="https://github.com/vprflv/AutoParts"
+                                    href="https://github.com/viktorprf234/AutoParts.git"
                                     target="_blank"
                                     className="flex-1 text-center py-4 border border-stone-300 rounded-3xl hover:bg-slate-50 font-medium transition-colors"
                                 >
@@ -73,7 +73,7 @@ export default function Projects() {
                                     Посмотреть сайт
                                 </a>
                                 <a
-                                    href="https://github.com/vprflv/AutoParts"
+                                    href="https://github.com/viktorprf234/AutoPick.git"
                                     target="_blank"
                                     className="flex-1 text-center py-4 border border-stone-300 rounded-3xl hover:bg-slate-50 font-medium transition-colors"
                                 >
