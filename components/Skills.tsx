@@ -7,7 +7,7 @@ export default function Skills() {
                 <span className="uppercase tracking-widest text-emerald-600 text-sm font-medium">
                     02 / Навыки
                 </span>
-                <h2 className="section-header text-4xl sm:text-5xl md:text-5xl font-semibold tracking-tighter mt-3 mb-10 md:mb-12 text-slate-900">
+                <h2 className="section-header text-4xl sm:text-5xl md:text-5xl font-semibold tracking-tighter mt-3 mb-10 md:mb-12 text-stone-900">
                     Технологии, которыми владею
                 </h2>
 
@@ -15,10 +15,10 @@ export default function Skills() {
                     {skills.map((skill, index) => (
                         <div
                             key={index}
-                            className="bg-white cursor-pointer border border-slate-200 hover:border-emerald-400
+                            className="bg-white cursor-pointer border border-stone-200 hover:border-emerald-400
                                        rounded-3xl p-6 sm:p-8 text-center card-hover transition-all hover:shadow-md"
                         >
-                            <span className="text-lg sm:text-xl font-medium text-slate-800">
+                            <span className="text-lg sm:text-xl font-medium text-stone-800">
                                 {skill.name}
                             </span>
                         </div>

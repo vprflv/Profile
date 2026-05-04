@@ -25,7 +25,7 @@ export default function Navbar() {
     const smoothScrollTo = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
-            const navbarHeight = 80; // подкорректировал под новый padding
+            const navbarHeight = 80;
             const elementPosition = element.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - navbarHeight;
 
@@ -38,7 +38,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-200">
+        <nav className="sticky top-0 z-50 bg-white/50 backdrop-blur-3xl">
             <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-4 md:py-5 flex items-center justify-between">
 
                 {/* Logo */}
@@ -50,16 +50,16 @@ export default function Navbar() {
                         <span className="text-2xl font-bold text-white tracking-tighter">ВП</span>
                     </div>
                     <div className="hidden sm:block">
-                        <p className="text-sm text-slate-500 -mt-1">Full Stack Developer</p>
+                        <p className="text-sm text-stone-700 -mt-1">Full Stack Developer</p>
                     </div>
                 </button>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8 text-lg font-medium">
-                    <button onClick={() => smoothScrollTo('about')} className="nav-link text-slate-600 hover:text-emerald-900 transition-colors">Обо мне</button>
-                    <button onClick={() => smoothScrollTo('projects')} className="nav-link text-slate-600 hover:text-emerald-900 transition-colors">Проекты</button>
-                    <button onClick={() => smoothScrollTo('experience')} className="nav-link text-slate-600 hover:text-emerald-900 transition-colors">Опыт</button>
-                    <button onClick={() => smoothScrollTo('contact')} className="nav-link text-slate-600 hover:text-emerald-900 transition-colors">Контакты</button>
+                    <button onClick={() => smoothScrollTo('about')} className="nav-link cursor-pointer text-stone-700 hover:text-emerald-900 transition-colors">Обо мне</button>
+                    <button onClick={() => smoothScrollTo('projects')} className="nav-link cursor-pointer text-stone-700 hover:text-emerald-900 transition-colors">Проекты</button>
+                    <button onClick={() => smoothScrollTo('experience')} className="nav-link cursor-pointer text-stone-700 hover:text-emerald-900 transition-colors">Опыт</button>
+                    <button onClick={() => smoothScrollTo('contact')} className="nav-link cursor-pointer text-stone-700 hover:text-emerald-900 transition-colors">Контакты</button>
                 </div>
 
                 {/* Кнопки справа */}
@@ -67,7 +67,7 @@ export default function Navbar() {
                     {/* Большая кнопка на md+ */}
                     <button
                         onClick={scrollToContact}
-                        className="hidden md:flex items-center gap-2 px-6 py-3 bg-emerald-900 hover:bg-emerald-800 text-white font-semibold rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
+                        className="hidden md:flex items-center gap-2 cursor-pointer px-6 py-3 bg-emerald-900 hover:bg-emerald-800 text-white font-semibold rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
                     >
                         <Mail size={20} />
                         Связаться со мной

@@ -15,7 +15,7 @@ export default function Hero() {
 
                 {/* Левый блок с текстом */}
                 <div className="space-y-4 md:space-y-8 text-center md:text-left order-2 md:order-1">
-                    <h1 className="text-[2.1rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.05] heading-font text-slate-900">
+                    <h1 className="text-[2.1rem] xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.05] heading-font text-stone-900">
                         Привет! Я — <span className="bg-emerald-600 bg-clip-text text-transparent">Виктор</span>
                     </h1>
 
@@ -48,12 +48,12 @@ export default function Hero() {
                     >
                         <button
                             onClick={scrollToProjects}
-                            className="group mx-auto md:mx-0 px-7 sm:px-10 py-5 bg-gradient-to-r from-emerald-700 to-emerald-900
+                            className="group mx-auto md:mx-0 px-7 sm:px-10 py-5 cursor-pointer bg-gradient-to-r from-emerald-700 to-emerald-900
                              hover:from-emerald-800 hover:to-emerald-950 text-white
                              font-semibold text-lg sm:text-xl rounded-3xl shadow-xl hover:shadow-2xl
                              transition-all duration-300 flex items-center gap-3 active:scale-95"
                         >
-                            К моим проектам
+                            Мои проекты
                             <span className="text-2xl group-hover:translate-y-1 transition-transform">↓</span>
                         </button>
                     </motion.div>

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-
+import { Send } from "lucide-react";
 export default function Contact() {
     const [agreed, setAgreed] = useState(false);
 
@@ -11,22 +11,36 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-16 md:py-24 bg-stone-200">
-            <div className="max-w-screen-2xl mx-auto px-4 sm:px-6">
-                <div className="grid md:grid-cols-12 gap-10 md:gap-16">
+        <section id="contact" className="py-24 bg-white">
+            <div className="max-w-screen-2xl mx-auto px-6">
+                <div className="grid md:grid-cols-12 gap-16">
+
                     {/* Левая колонка */}
                     <div className="md:col-span-5">
-                        <span className="uppercase tracking-widest text-emerald-900 text-sm font-medium">
-                            05 / Контакты
-                        </span>
-                        <h2 className="section-header text-4xl sm:text-5xl md:text-5xl font-semibold tracking-tighter mt-3 text-slate-900">
+                        <span
+                            className="uppercase tracking-widest text-emerald-900 text-sm font-medium">05 / Контакты</span>
+                        <h2 className="section-header text-5xl font-semibold tracking-tighter mt-3 text-slate-900">
                             Давайте работать вместе
                         </h2>
-                        <p className="mt-6 text-base sm:text-lg text-slate-600">
-                            Отвечу в течение 24 часов.
-                        </p>
-                    </div>
+                        <p className="mt-6 text-lg text-slate-600">Отвечу в течение 24 часов.</p>
 
+                        {/* Соцсети */}
+                        <div className="mt-10">
+                            <p className="text-sm text-slate-500 mb-4">Или пишите напрямую:</p>
+                            <div className="flex flex-wrap gap-4">
+                                <a href="https://t.me/vp_dev_fs" target="_blank"
+                                   className="flex items-center gap-3 px-5 py-3 bg-slate-100 hover:bg-slate-200 rounded-2xl transition">
+                                    <Send size={22} className="text-emerald-600"/>
+                                    <span className="font-medium">Telegram</span>
+                                </a>
+                                <a href="https://linkedin.com/in/виктор-перфильев-1ba17ba3" target="_blank"
+                                   className="flex items-center gap-3 px-5 py-3 bg-slate-100 hover:bg-slate-200 rounded-2xl transition">
+                                    <span className="text-2xl">💼</span>
+                                    <span className="font-medium">LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     {/* Правая колонка — форма */}
                     <div className="md:col-span-7">
                         <form
@@ -79,7 +93,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={!agreed}
-                                className="w-full py-6 bg-emerald-900 hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold rounded-3xl text-lg transition-all active:scale-[0.985]"
+                                className="w-full py-6 bg-emerald-900 cursor-pointer hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-semibold rounded-3xl text-lg transition-all active:scale-[0.985]"
                             >
                                 Отправить сообщение
                             </button>

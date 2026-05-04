@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-    title: 'Ваше Имя | Full Stack Developer',
+    title: 'Виктор П. | Full Stack Developer',
     description: 'Создаю современные веб-приложения на Next.js',
 };
 
